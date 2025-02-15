@@ -1,0 +1,10 @@
+.company-section h3,
+.company-section h2 {
+  margin-top: px; /* Adjust this value for desired spacing */
+  margin-bottom: 50px; /* Optional: space below the headings */
+
+}
+
+.light-blue {
+  color: red; /* Light blue color */
+}

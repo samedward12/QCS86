@@ -1,0 +1,208 @@
+/* Global container */
+.user-settings-container {
+  display: flex;
+  height: 100vh;
+  /* Full height of the viewport */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Main content area styling */
+.user-profile-main {
+  margin-left: 25%;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+/* Profile header styling */
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Align items with space between */
+  margin-bottom: 20px;
+}
+
+.profile-picture-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Space between picture and button group */
+}
+
+.user-profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Space between the buttons */
+}
+
+.profile-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.change-pic {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.delete-pic {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+/* Profile details section */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-details label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Adjust the input width for better alignment */
+.profile-details input,
+.profile-details textarea {
+  width: 50%;
+  /* Width of other form fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Name inputs: Shorten width for alignment */
+.name-input {
+  width: 45%;
+  /* Shorten width of name fields */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Save button styling */
+.save-button {
+  margin-top: 40px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 200px;
+  margin-left: 370px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* Tablets and Smaller Screens (1024px and below) */
+@media (max-width: 1024px) {
+  .user-profile-main {
+    margin-left: 10%;
+    /* Reduce left margin */
+    width: 80%;
+    /* Shrink width for smaller screens */
+  }
+
+  .profile-details input,
+  .profile-details textarea {
+    width: 70%;
+    /* Adjust width for better alignment */
+  }
+
+  .name-input {
+    width: 70%;
+    /* Increase width for smaller screens */
+  }
+
+  .save-button {
+    margin-left: 0;
+    /* Center-align button */
+    margin-right: 0;
+    width: 70%;
+    /* Adjust width for smaller screens */
+  }
+}
+
+/* Mobile Devices (768px and below) */
+@media (max-width: 768px) {
+  .user-profile-main {
+    margin-left: 5%;
+    /* Reduce left margin further */
+    width: 90%;
+    /* Maximize width for mobile */
+  }
+
+  .profile-header {
+    flex-wrap: wrap;
+    /* Allow wrapping of header elements */
+    justify-content: center;
+    /* Center-align header items */
+  }
+
+  .profile-btn-group {
+    flex-direction: row;
+    /* Buttons side by side */
+    justify-content: center;
+  }
+
+  .user-profile-photo {
+    width: 120px;
+    height: 120px;
+    /* Reduce size for mobile */
+  }
+
+  .profile-details input,
+  .profile-details textarea {
+    width: 100%;
+    /* Full width on mobile */
+  }
+
+  .name-input {
+    width: 100%;
+    /* Full width for mobile */
+  }
+
+  .save-button {
+    width: 100%;
+    /* Full width save button */
+  }
+}
+
+/* Very Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .user-profile-photo {
+    width: 100px;
+    height: 100px;
+    /* Further reduce size */
+  }
+
+  .save-button {
+    width: 100%;
+    /* Full width save button */
+  }
+}
